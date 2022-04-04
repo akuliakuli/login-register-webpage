@@ -69,7 +69,7 @@ main{
     background-position: center; 
     display: flex;
     justify-content: center;
-    align-items:center;
+    align-items:flex-end;
 }
 main p {
     background-color: #080708;
