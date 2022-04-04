@@ -1,0 +1,103 @@
+html{
+    height: 100%;
+}
+
+body{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color:#BBD1EA;
+    display: flex;
+    color: #ffffff;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+header h1{
+    background-color: #507DBC;
+    padding: .3em;
+    margin-left: 2em;
+}
+.header-container{
+    display: flex;
+    align-items: flex-end;
+}
+header ul{
+    margin-right: 1.2em;
+    display: flex;
+    list-style: none;
+    gap: 1em;
+}
+header li {
+    background-color: #507DBC;
+    padding: .5em;
+    cursor: pointer;
+}
+header li:hover {
+    text-decoration-line: underline;
+    text-decoration-color: antiquewhite;
+}
+header img {
+    margin-left: 1.5em;
+    max-width: 6em;
+    max-height: 6em;
+    size-adjust: cover;
+}
+footer{
+    margin-top: auto;
+    background-color: #507DBC;
+    color: #DAE3E5;
+    display: flex;
+    justify-content: center;
+}
+footer p {
+    background-color: #04080F;
+    font-size: 1.2em;
+    padding: .5em;
+}
+main{
+    background-image: url("img/mountain.jpg");
+    height: 400px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+main p {
+    background-color: #507DBC;
+    color:white;
+    max-width: fit-content;
+    opacity: 0.8;
+    margin-top: .7em;
+    padding: .9em;
+}
+.sign{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .6em;
+    background-color: #04080F;
+    max-width: fit-content;
+    padding: 1em;
+    color:#ffffff;
+}
+.sign p {
+    background-color: #BBD1EA;
+    font-size: 1.3em;
+    max-width: fit-content;
+}
+.sign h1{
+    background-color: #507DBC;
+    max-width: fit-content;
+    color:#ffffff;
+    padding:.3em
+}
+.signups{
+    align-self: center;
+}
