@@ -8,20 +8,22 @@ body{
     flex-direction: column;
     margin: 0;
     padding: 0;
-    background-color:#3772FF;
+    background-color:#44FFD1;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 header{
-    background-color:#E6E8E6;
+    background-color:#6153CC;
     display: flex;
     color: #ffffff;
     align-items: flex-end;
     justify-content: space-between;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 header h1{
-    background-color: #FDCA40;
+    background-color: #44FFD1;
     padding: .3em;
     margin-left: 2em;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 .header-container{
     display: flex;
@@ -34,7 +36,7 @@ header ul{
     gap: 1em;
 }
 header li {
-    background-color: #DF2935;
+    background-color: #44FFD1;
     padding: .5em;
     cursor: pointer;
 }
@@ -50,13 +52,13 @@ header img {
 }
 footer{
     margin-top: auto;
-    background-color: #E6E8E6;
+    background-color: #A60067;
     color: #DAE3E5;
     display: flex;
     justify-content: center;
 }
 footer p {
-    background-color:#DF2935;
+    background-color:#6153CC;
     font-size: 1.2em;
     padding: .5em;
 }
@@ -70,9 +72,10 @@ main{
     display: flex;
     justify-content: center;
     align-items:flex-end;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 main p {
-    background-color: #080708;
+    background-color: #6153CC;
     color:white;
     max-width: fit-content;
     opacity: 0.8;
@@ -86,10 +89,11 @@ main p {
     border-radius: 10%;
     align-items: center;
     gap: .6em;
-    background-color: #FDCA40;
+    background-color: #6153CC;
     max-width: fit-content;
     padding: 2.5em;
     color:#ffffff;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 .sign p {
     background-color: #E6E8E6;
@@ -97,21 +101,22 @@ main p {
     max-width: fit-content;
 }
 .sign h1{
-    background-color: #E6E8E6;
-    border-radius: 100%;
+    background-color:#961D4E;
     max-width: fit-content;
-    color:#080708;
     padding:.5em
 }
 .sign input{
-    background-color: #BBD1EA;
+    background-color: violet;
+    color: white;
+    opacity: 0.9;
+    font-size: 1.2em;
     border-radius: 5%;
 }
 .submit{
-    margin-top: 1em;
-    background-color:#0b63dd;
+    border-radius: 20%;
+    padding: .8em;
+    background-color:#961D4E;
     color: #ffffff;
-    font-size: 1.2em;
 }
 .signups{
     min-width: 100%;
