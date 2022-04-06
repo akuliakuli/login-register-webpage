@@ -38,6 +38,7 @@ header ul{
 header li {
     background-color: #44FFD1;
     padding: .5em;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     cursor: pointer;
 }
 header li:hover {
@@ -55,6 +56,7 @@ footer{
     background-color: #A60067;
     color: #DAE3E5;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 footer p {
@@ -71,21 +73,37 @@ main{
     background-position: center; 
     display: flex;
     justify-content: center;
+    gap: 1.3em;
+    flex-wrap: wrap;
     align-items:flex-end;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 main p {
     background-color: #6153CC;
     color:white;
-    max-width: fit-content;
+    max-width:8em;
     opacity: 0.8;
     margin-top: .7em;
-    padding: .9em;
+    padding: .3em;
+    font-size: 1.5em;
+}
+main img {
+    max-width: 12em;
+    max-height: 12em;
+}
+
+.main-text-lorem{
+    padding: 0em;
+    font-size: 1em;
+    background-color: unset;
+    border-top: 2px solid #44FFD1;
+    border-bottom: 2px solid #44FFD1;
 }
 .sign{
     margin-top: 1.2em;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     border-radius: 10%;
     align-items: center;
     gap: .6em;
@@ -94,6 +112,8 @@ main p {
     padding: 2.5em;
     color:#ffffff;
     box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    margin-bottom: 2em;
+    flex-wrap: wrap;
 }
 .sign p {
     background-color: #E6E8E6;
@@ -119,10 +139,54 @@ main p {
     color: #ffffff;
 }
 .signups{
-    min-width: 100%;
+    width: 100%;
+    max-height: 20%;
     display: flex;
     gap: 5.5em;
     flex-direction:row;
     justify-content: center;
+    flex-wrap: wrap;
     align-self: center;
+}
+@media (max-width:800px){
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+    header h1{
+        font-size: 1.2em;
+        margin-left: 0em;
+    }
+    header li {
+        font-size: 1em;
+        margin-right: 0em;
+    }
+    .signups{
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
+    .signups > *{
+        font-size:1em;
+    }
+}
+@media (max-width:326px){
+    header h1{
+        font-size: 1em;
+        padding: 0em;
+        margin-left: 0em;
+    }
+    header li {
+        font-size: 1em;
+        padding: 0em;
+        margin-right: 0em;
+    }
+    .signups{
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
+    .signups > *{
+        font-size:.8em;
+    }
 }
