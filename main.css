@@ -151,13 +151,18 @@ main img {
 @media (max-width:800px){
     header{
         flex-direction: column;
+        justify-content: center;
         align-items: center;
+    }
+    header > *{
+        width: 60%;
     }
     header h1{
         font-size: 1.2em;
         margin-left: 0em;
     }
     header li {
+        width: 50%;
         font-size: 1em;
         margin-right: 0em;
     }

@@ -1,3 +1,7 @@
+<?php
+    include "includes/autoload.inc.php";
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -25,13 +29,13 @@
     <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos odio quod officia! Qui, quidem delectus!</P>
 </main>
 <div class ="signups">
-    <form class ="sign">
+    <form class ="sign" method="POST" action="includes/login.inc.php">
             <h1>SIGN UP</h1>
             <input type ="text" placeholder="type your name" name ="name">
             <input type ="password" placeholder="type password"  name ="psw">
             <button type ="submit" name = "submit" class ="submit">SUBMIT</button>
     </form>
-    <form class ="sign">
+    <form class ="sign" method = "POST" action = "main.php">
         <h1>REGISTER</h1>
         <input type ="text" placeholder="type your name"  name ="name">
         <input type ="password" placeholder="type password"  name ="psw">
@@ -39,6 +43,10 @@
         <input type ="email" placeholder="type your email"  name ="email">
         <button type ="submit" name = "submit" class ="submit">SUBMIT</button>
 </form>
+<?php
+    $s = new Signupcontr();
+    $s ->register($_POST['name'],$_POST['psw'],$_POST['email'])
+?>
 </div>
 <footer>
         <p>Some text</p>
