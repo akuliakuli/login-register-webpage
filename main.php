@@ -1,5 +1,6 @@
 <?php
     include "includes/autoload.inc.php";
+    session_start();
 ?>
 
 <!DOCTYPE html>
@@ -16,9 +17,21 @@
 <header>
     <h1>Register</h1>
     <ul>
-        <li>SIGN UP</li>
+    <?php
+    if(isset($_SESSION['userid'])){
+        ?>
+
+        <li><?php   echo $_SESSION['userid'];?></li>
         <li>LOGIN</li>
     </ul>
+    <?php
+    }else{
+    ?>
+    <li>SIGN UP</li>
+    <li>LOGIN</li>
+    <?php
+    }
+    ?>
 </div>
 </header>
 <main>
@@ -35,7 +48,7 @@
             <input type ="password" placeholder="type password"  name ="psw">
             <button type ="submit" name = "submit" class ="submit">SUBMIT</button>
     </form>
-    <form class ="sign" method = "POST" action = "main.php">
+    <form class ="sign" method = "POST" action = "includes/signup.inc.php">
         <h1>REGISTER</h1>
         <input type ="text" placeholder="type your name"  name ="name">
         <input type ="password" placeholder="type password"  name ="psw">
@@ -43,10 +56,7 @@
         <input type ="email" placeholder="type your email"  name ="email">
         <button type ="submit" name = "submit" class ="submit">SUBMIT</button>
 </form>
-<?php
-    $s = new Signupcontr();
-    $s ->register($_POST['name'],$_POST['psw'],$_POST['email'])
-?>
+
 </div>
 <footer>
         <p>Some text</p>
